@@ -11,4 +11,8 @@
             </swiper-item>
         </block>
     </swiper>
+    <!--    home.wxml里面的文件不应该过多，如果过多应该进行拆分
+            如果wxml文件过多，就会导致wxss文件过多，js文件也会过多
+    -->
+    <s-category-grid grid="{{grid}}"> </s-category-grid>
 </view>

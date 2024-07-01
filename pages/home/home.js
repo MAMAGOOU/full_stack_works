@@ -2,6 +2,7 @@
 import {config} from "../../config/config"
 import {Theme} from "../../model/theme";
 import {Banner} from "../../model/banner";
+import {Category} from "../../model/category";
 
 Page({
 
@@ -11,6 +12,7 @@ Page({
     data: {
         themeA: null,
         bannerB: null,
+        grid: [],
     },
 
     /**
@@ -25,11 +27,15 @@ Page({
     async initAllData() {
         const themeA = await Theme.getHomeLocationA()
         const bannerB = await Banner.getHomeLocationB()
+        const grid = await Category.getGridCategory()
         console.log(themeA)
         console.log(bannerB)
+        console.log('--------------')
+        console.log(grid)
         this.setData({
             themeA: themeA[0],
-            bannerB: bannerB
+            bannerB: bannerB,
+            grid: grid,
         })
     },
 
