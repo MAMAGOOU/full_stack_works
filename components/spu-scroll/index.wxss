@@ -1,0 +1,39 @@
+.title {
+    width: 694rpx;
+    height: 90rpx;
+}
+
+.price-unit {
+    /*优先覆盖其他规则*/
+    font-size: 28rpx !important;
+    color: #157658 !important;
+}
+
+.price-value {
+    font-size: 32rpx !important;
+    font-weight: 800;
+    color: #157658 !important;
+}
+
+.spu-img {
+    width: 160rpx;
+    height: 160rpx;
+}
+
+.spu-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 60rpx;
+}
+
+.scroll-view{
+    margin-top: 28rpx;
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    padding-top: 42rpx;
+    padding-bottom: 34rpx;
+    padding-left: 28rpx;
+}

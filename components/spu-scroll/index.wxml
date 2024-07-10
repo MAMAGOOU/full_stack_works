@@ -1,0 +1,16 @@
+<view class="container">
+    <image class="title" src="{{theme.title_img}}"></image>
+    <scroll-view class=" scroll-view" enable-flex="true" scroll-x="true">
+        <block wx:for="{{spuList}}">
+            <view class="spu-container">
+                <image class="spu-img" src="{{item.img}}"></image>
+                <l-price value="{{item.price}}"
+                         color="#157658"
+                         l-unit-class="price-unit"
+                         l-value-class="price-value"
+                ></l-price>
+                <text>{{item.title}}</text>
+            </view>
+        </block>
+    </scroll-view>
+</view>
