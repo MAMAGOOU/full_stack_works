@@ -20,20 +20,43 @@
     height: 160rpx;
 }
 
-.spu-container{
+.spu-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 60rpx;
 }
 
-.scroll-view{
+.scroll-view {
     margin-top: 28rpx;
     display: flex;
     flex-direction: row;
 }
-.container{
+
+.container {
     padding-top: 42rpx;
     padding-bottom: 34rpx;
     padding-left: 28rpx;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.inner {
+    display: flex;
+    flex-direction: row;
+}
+
+.spu-text {
+    font-size: 20rpx;
+    color: #666666;
+    /*margin-top: 20rpx;*/
+    max-width: 150rpx;
+    /*超出部分隐藏*/
+    overflow: hidden;
+    /*文本溢出时，在文本末尾添加省略号*/
+    text-overflow: ellipsis;
+    /*即使内容过长也不换行*/
+    white-space: nowrap;
+
 }

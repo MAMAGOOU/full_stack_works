@@ -3,6 +3,10 @@ Component({
         theme: Object,
         spuList: Array,
     },
-    data: {},
-    methods: {}
+    data: {
+
+    },
+    methods: {
+
+    }
 });

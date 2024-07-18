@@ -36,11 +36,13 @@ Page({
         // 通过name匹配
         const themeA = await theme.getHomeLocationA()
         const themeE = await theme.getHomeLocationE()
+        const themeF = await theme.getHomeLocationF()
         let themeESpu = []
         if (themeE.online) {
             const data = await Theme.getHomeLocationESpu()
             if (data) {
                 themeESpu = data.spu_list.slice(0, 8)
+                console.log('themeESpu===>', themeESpu)
             }
         }
         const grid = await Category.getHomeLocationC()
@@ -51,6 +53,7 @@ Page({
         this.setData({
             themeA: themeA,
             themeE: themeE,
+            themeF: themeF,
             themeESpu: themeESpu,
             bannerB: bannerB,
             grid: grid,
