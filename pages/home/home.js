@@ -13,7 +13,9 @@ Page({
     data: {
         themeA: null,
         themeE: null,
+        themeH: null,
         bannerB: null,
+        bannerG: null,
         grid: [],
         activityD: null,
     },
@@ -50,14 +52,19 @@ Page({
 
         console.log('--------------')
         console.log(grid)
+        const bannerG = await Banner.getHomeLocationG();
+        const themeH = await theme.getHomeLocationH()
+        console.log('bannerG===>', bannerG)
         this.setData({
             themeA: themeA,
             themeE: themeE,
             themeF: themeF,
+            themeH: themeH,
             themeESpu: themeESpu,
             bannerB: bannerB,
             grid: grid,
-            activityD: activityD
+            activityD: activityD,
+            bannerG: bannerG
         })
     },
 

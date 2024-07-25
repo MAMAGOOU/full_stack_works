@@ -31,6 +31,9 @@ export class Theme {
     async getHomeLocationF() {
         return this.themes.find(theme => theme.name === Theme.locationF)
     }
+    async getHomeLocationH() {
+        return this.themes.find(theme => theme.name === Theme.locationH)
+    }
 
     static async getHomeLocationESpu() {
         return Theme.getThemeSpuByName(Theme.locationE)
