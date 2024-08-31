@@ -4,6 +4,7 @@ import {Theme} from "../../model/theme";
 import {Banner} from "../../model/banner";
 import {Category} from "../../model/category";
 import {Activity} from "../../model/activity";
+import {SpuPaging} from "../../model/spu-paging";
 
 Page({
 
@@ -27,6 +28,19 @@ Page({
      */
     onLoad: async function (options) {
         await this.initAllData()
+    },
+
+    /**
+     * 获取推荐分页列表数据
+     * @returns {Promise<void>}
+     */
+    async initBottomSpuList() {
+        const paging = await SpuPaging.getLatestPaging()
+        const data = paging.getMoreData()
+        if (!data){
+            return
+        }
+
     },
 
     async initAllData() {

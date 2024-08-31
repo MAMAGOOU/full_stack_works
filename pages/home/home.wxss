@@ -33,3 +33,15 @@
 }
 
 /*点击态*/
+.title-spu-bottom {
+    width: 690rpx;
+    height: 70rpx;
+    margin-bottom: 38rpx;
+}
+
+.spu-bottom {
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
